@@ -1,5 +1,11 @@
 import { Component, useEffect, useState, type ReactNode } from 'react';
-import { onAuthStateChanged, signInWithPopup, signOut, type User } from 'firebase/auth';
+import {
+  onAuthStateChanged,
+  signInWithRedirect,
+  getRedirectResult,
+  signOut,
+  type User
+} from 'firebase/auth';
 import {
   ArrowLeftRight,
   BarChart3,
@@ -198,19 +204,17 @@ export default function App() {
     };
   }, [authReady, user]);
 
-  const handleGoogleSignIn = async () => {
-    setSigningIn(true);
-    setAuthError(null);
-    try {
-      await signInWithPopup(auth, googleProvider);
-      setShowLanding(false);
-    } catch (err) {
-      setAuthError(err instanceof Error ? err.message : 'Google Sign-In cancelled or blocked.');
-    } finally {
-      setSigningIn(false);
-    }
-  };
-
+  
+useEffect(() => {
+  getRedirectResult(auth).catch((err) => {
+    setAuthError(
+      err instanceof Error
+        ? err.message
+        : 'Google Sign-In failed.'
+    );
+    setSigningIn(false);
+  });
+}, []);
   const handleSignOut = async () => {
     await signOut(auth);
     setActiveTab('dashboard');
