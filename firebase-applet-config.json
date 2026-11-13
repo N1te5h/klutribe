@@ -1,12 +1,11 @@
+
 {
-  "projectId": "vocal-atom-6pp0d",
-  "appId": "1:1061763458631:web:3b9145af5df678a9893362",
-  "apiKey": "AIzaSyAtaBB6GqGQofJ3UYKj07py77K6mN8WtH8",
-  "authDomain": "vocal-atom-6pp0d.firebaseapp.com",
-  "firestoreDatabaseId": "ai-studio-178c3bda-b697-451f-b3f4-d2c1f2747910",
-  "storageBucket": "vocal-atom-6pp0d.firebasestorage.app",
-  "messagingSenderId": "1061763458631",
-  "measurementId": "",
-  "oAuthClientId": "1061763458631-nud4svsikg1202e64qbdhhrd2lr3ko66.apps.googleusercontent.com",
-  "recaptchaSiteKey": ""
+  "projectId": "klu-tribe",
+  "apiKey": "AIzaSyA2RNoSguMiaHp-TxVDbtngyHom9mEWBGQ",
+  "authDomain": "klu-tribe.firebaseapp.com",
+  "storageBucket": "klu-tribe.firebasestorage.app",
+  "messagingSenderId": "289325531956",
+  "appId": "1:289325531956:web:d82fa717552bfa96185b61",
+  "measurementId": "G-0SHLTCYHRV",
+  "firestoreDatabaseId": "(default)"
 }
