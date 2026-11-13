@@ -1,20 +1,45 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# KLU TRIBE
 
-# Run and deploy your AI Studio app
+### Your Campus. Your Community. Your Tribe.
 
-This contains everything you need to run your app locally.
+KLU TRIBE is a student community platform designed for KL University students. It brings students together through networking, profiles, campus engagement, talent discovery, and a personalized digital Tribe Pass.
 
-View your app in AI Studio: https://ai.studio/apps/178c3bda-b697-451f-b3f4-d2c1f2747910
+## Features
 
-## Run Locally
+- Student Registration & Authentication
+- Student ID Verification
+- Personalized Student Profiles
+- Student Community & Networking
+- Talent Showcase
+- Campus Updates
+- Digital Tribe Pass
+- Personalized Student Dashboard
+- Admin Dashboard
 
-**Prerequisites:**  Node.js
+## Tech Stack
 
+- React
+- TypeScript
+- Vite
+- Firebase Authentication
+- Cloud Firestore
+- Tailwind CSS
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Project
+
+KLU TRIBE – A dedicated digital community for KL University students.
+
+**Built with ❤️ for the KLU community.**
